@@ -22,7 +22,7 @@ The routes that this application serves are:
 There are two ways to get this project working.
 
 ### 1 If you have Docker installed and setup, follow these steps to use the docker image from the repo:
- - download the zipped docker image `take-home-test.tar`
+ - download the zipped docker image `take-home-test.tar` from this [Google Drive link](https://drive.google.com/file/d/1m9a1wmfc_BQWQhUOtBRvC4e7Y04heF47/view?usp=sharing).
  - `cd` into the directory where the zipped image is downloaded
  - run `docker load < take-home-test.tar` (Use Command Prompt, not PowerShell)
  - run `docker run -p 5000:5000 take-home-test`
@@ -60,7 +60,7 @@ There are two ways to get this project working.
   - Run the command `python app.py` or `flask run`.
   - Now use Postman exactly as described above.
 
-## Installing Docker on Windows for Method 1 
+## Installing Docker on Windows for Method 1
 ### (Warning: Need patience for the entire setup!)
  - Download Docker from [this link](https://docs.docker.com/docker-for-windows/install/).
  - After installing Docker (and restarting your computer), follow [this link](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) all the way to Step 6.
