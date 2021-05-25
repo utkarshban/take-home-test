@@ -48,16 +48,22 @@ def balance():
     return jsonify(transactions.balance())
 
 def add_transaction_validate(data):
+    check_data(data)
     if ("payer" in data and "points" in data and "timestamp" in data) == False:
         raise InvalidAPIUsage("Pass 'payer', 'points', and 'timestamp' in the body!")
     if (isinstance(data["payer"], str) and isinstance(data["points"], int) and isinstance(data["timestamp"], str)) == False:
         raise InvalidAPIUsage("'payer' should be a string, 'points' should be an integer, and 'timestamp' should be a string!")
 
 def spend_validate(data):
+    check_data(data)
     if "points" not in data:
         raise InvalidAPIUsage("Pass 'points' in the body!", 400)
     if not isinstance(data["points"], int):
         raise InvalidAPIUsage("'points' should be an integer!")
+
+def check_data(data):
+    if data == None or isinstance(data, dict) == False:
+        raise InvalidAPIUsage("JSON Body is required!")
 
 
 if __name__ == '__main__':
