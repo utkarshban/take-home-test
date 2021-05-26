@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Transaction Details</title>
+  <style>
+  label{
+    display: flex!important;
+    margin-left: 15px;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+</style>
+</head>
+<body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <form method="POST">
+  	<p style="margin-left: 15px;">Enter the transaction details</p>
+      <label for="payer">Payer: </label>
+      <input type="text" id="payer" name="payer" required><br/><br/>
+      <label for="points">Points: </label>
+      <input type="number" id="points" name="points" required><br/><br/>
+      <label for="timestamp">Timestamp: </label>
+      <input type="datetime-local" id="timestamp" name="timestamp" required><br/><br/>
+      <input type="submit" style="margin-left: 15px;">
+  </form>
+</body>
+</html>

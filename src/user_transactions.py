@@ -52,6 +52,8 @@ class UserTransactions:
             deductions_list.append({"payee": deduction, "points": deductions[deduction]})
         return deductions_list
 
+transactions = UserTransactions()
+
 class TransactionsException(Exception):
     status_code = 400
 
