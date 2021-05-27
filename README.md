@@ -71,4 +71,4 @@ There are two ways to get this project working.
  - `cd` into the folder containing Dockerfile.
  - Run `docker image build -t <image-name> .`. (Do not forget the `.` near the end of the command!)
  - You should now see the image in the Docker Hub application under Images.
- - Run `docker run -p 5000:5000 <image-name>` and start using Postman to interact with the APIs.
+ - Run `docker run -p 5000:5000 <image-name>` and start using the web service with your browser.
